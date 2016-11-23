@@ -125,6 +125,9 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 USE_DEVICE_SPECIFIC_GPS               := true
 USE_DEVICE_SPECIFIC_LOC_API           := true
+<<<<<<< HEAD
+>>>>>>> 67671b1... ham: Use bacon GPS HAL
+=======
 >>>>>>> 67671b1... ham: Use bacon GPS HAL
 
 # Maximum GLES shader cache size for each app to store the compiled shader

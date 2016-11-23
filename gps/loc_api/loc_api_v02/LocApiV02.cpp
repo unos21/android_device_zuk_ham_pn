@@ -1969,7 +1969,11 @@ void  LocApiV02 :: reportSv (
   const qmiLocEventGnssSvInfoIndMsgT_v02 *gnss_report_ptr)
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   HaxxSvStatus      SvStatus;
+=======
+  GnssSvStatus      SvStatus;
+>>>>>>> 67671b1... ham: Use bacon GPS HAL
 =======
   GnssSvStatus      SvStatus;
 >>>>>>> 67671b1... ham: Use bacon GPS HAL
@@ -1984,7 +1988,11 @@ void  LocApiV02 :: reportSv (
 
   num_svs_max = 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   memset (&SvStatus, 0, sizeof (HaxxSvStatus));
+=======
+  memset (&SvStatus, 0, sizeof (GnssSvStatus));
+>>>>>>> 67671b1... ham: Use bacon GPS HAL
 =======
   memset (&SvStatus, 0, sizeof (GnssSvStatus));
 >>>>>>> 67671b1... ham: Use bacon GPS HAL
