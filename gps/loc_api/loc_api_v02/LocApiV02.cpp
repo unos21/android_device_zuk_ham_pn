@@ -1968,7 +1968,11 @@ void LocApiV02 :: reportPosition (
 void  LocApiV02 :: reportSv (
   const qmiLocEventGnssSvInfoIndMsgT_v02 *gnss_report_ptr)
 {
+<<<<<<< HEAD
   HaxxSvStatus      SvStatus;
+=======
+  GnssSvStatus      SvStatus;
+>>>>>>> 67671b1... ham: Use bacon GPS HAL
   GpsLocationExtended locationExtended;
   int              num_svs_max, i;
   const qmiLocSvInfoStructT_v02 *sv_info_ptr;
@@ -1979,7 +1983,11 @@ void  LocApiV02 :: reportSv (
             gnss_report_ptr->altitudeAssumed);
 
   num_svs_max = 0;
+<<<<<<< HEAD
   memset (&SvStatus, 0, sizeof (HaxxSvStatus));
+=======
+  memset (&SvStatus, 0, sizeof (GnssSvStatus));
+>>>>>>> 67671b1... ham: Use bacon GPS HAL
   memset(&locationExtended, 0, sizeof (GpsLocationExtended));
   locationExtended.size = sizeof(locationExtended);
   if(gnss_report_ptr->svList_valid == 1)
