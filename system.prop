@@ -96,7 +96,3 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 # Wifi
 wifi.interface=wlan0
 wifi.supplicant_scan_interval=15
-
-#Device
-ro.product.device=Lenovo Zuk Z1
-
