@@ -15,6 +15,10 @@ persist.radio.multisim.config=dsds
 camera2.portability.force_api=1
 persist.camera.4k2k.enable=1
 
+# Perf
+ro.qualcomm.perf.cores_online=2
+ro.vendor.extension_library=libqti-perfd-client.so
+
 #Bluetooth
 bluetooth.hfp.client=1
 qcom.bluetooth.soc=smd
