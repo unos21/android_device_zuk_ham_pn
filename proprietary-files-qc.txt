@@ -4,7 +4,6 @@ bin/hci_qcomm_init
 vendor/lib/libbtnv.so
 
 # Perf
-bin/mpdecision
 vendor/lib/libqti-perfd-client.so
 
 # ADSP
