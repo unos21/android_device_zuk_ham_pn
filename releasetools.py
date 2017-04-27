@@ -48,11 +48,11 @@ def GetRadioFiles(z):
   return out
 
 def FullOTA_Assertions(info):
-  AddTrustZoneAssertion(info, info.input_zip)
+  #TODO: Implement device specific asserstions.
   return
 
 def IncrementalOTA_Assertions(info):
-  AddTrustZoneAssertion(info, info.target_zip)
+  #TODO: Implement device specific asserstions.
   return
 
 def InstallRawImage(image_data, api_version, input_zip, fn, info, filesmap):
