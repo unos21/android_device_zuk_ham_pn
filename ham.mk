@@ -163,14 +163,10 @@ PRODUCT_COPY_FILES += \
     libOmxVenc \
     libstagefrighthw \
     qcmediaplayer
-
+    
 # Power
 PRODUCT_PACKAGES += \
     power.msm8974
-
-# Recovery
-PRODUCT_PACKAGES += \
-    librecovery_updater_ham
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
