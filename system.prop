@@ -70,13 +70,6 @@ media.stagefright.less-secure=true
 media.aac_51_output_enabled=true
 av.streaming.offload.enable=false
 use.dedicated.device.for.voip=true
-
-#GPS
-persist.gps.qc_nlp_in_use=0
-ro.gps.agps_provider=1
-ro.pip.gated=0
-
-
 # cabl is handled by the panel
 ro.qualcomm.cabl=0
 
