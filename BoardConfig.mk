@@ -115,17 +115,23 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 SF_VSYNC_EVENT_PHASE_OFFSET_NS   := 5000000
 VSYNC_EVENT_PHASE_OFFSET_NS      := 7500000
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 6bcacc1... ham: Use bacon GPS HAL
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
 # Increase the size if shaders of size greater than 12KB are used.
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
+<<<<<<< HEAD
 =======
 # GPS
 BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 USE_DEVICE_SPECIFIC_GPS               := true
 USE_DEVICE_SPECIFIC_LOC_API           := true
 
+=======
+>>>>>>> parent of 6bcacc1... ham: Use bacon GPS HAL
 
 # Maximum GLES shader cache size for each app to store the compiled shader
 # binaries. Decrease the size if RAM or Flash Storage size is a limitation
