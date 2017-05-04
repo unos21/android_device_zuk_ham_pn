@@ -31,7 +31,7 @@ ro.qcom.ad=1
 ro.qcom.ad.calib.data=system/etc/ad_calib.cfg
 
 # sensors
-ro.qc.sdk.camera.facialproc=false
+ro.qc.sdk.camera.facialproc=true
 ro.qc.sdk.gestures.camera=false
 ro.qti.sdk.sensors.gestures=true
 ro.qti.sensors.bte=true
@@ -41,19 +41,6 @@ ro.qti.sensors.pick_up=false
 ro.qti.sensors.tilt_detector=true
 ro.qti.sensors.scrn_ortn=true
 
-# Radio
-rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
-persist.radio.add_power_save=1
-persist.radio.apm_sim_not_pwdn=1
-ro.telephony.call_ring.multiple=0
-ro.telephony.default_network=10
-persist.radio.flexmap_type=dds
-ro.use_data_netmgrd=true
-telephony.lteOnCdmaDevice=1
-ro.config.vc_call_vol_steps=6
-ro.ril.em_redial_vt_failover=true
-persist.radio.custom_ecc=1
-persist.radio.multisim.config=dsds
 
 # Media
 audio_hal.period_size=192
