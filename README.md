@@ -1,2 +1,2 @@
 # device tree for pure nexus ham
-#forkrd from martin jesus
+#Initially forked from martin jesus cm-14.1 branch
