@@ -14,15 +14,17 @@
 # limitations under the License.
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from ham device
 $(call inherit-product, device/zuk/ham/ham.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common aosp stuff.
+#$(call inherit-product, vendor/aosp/common.mk)
 
-PRODUCT_NAME := lineage_ham
+$(call inherit-product-if-exists, vendor/zuk/ham/ham-vendor.mk)
+
+PRODUCT_NAME := aosp_ham
 PRODUCT_DEVICE := ham
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_MODEL := ZUK Z1
