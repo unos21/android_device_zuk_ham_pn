@@ -202,6 +202,28 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
+#TWRP flags
+DEVICE_RESOLUTION                := 1080x1920
+#TW_TARGET_USES_QCOM_BSP         := true
+TARGET_RECOVERY_PIXEL_FORMAT     := "RGBX_8888"
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TW_NO_USB_STORAGE                := true
+TW_INCLUDE_CRYPTO                := true
+BOARD_SUPPRESS_SECURE_ERASE      := true
+#RECOVERY_SDCARD_ON_DATA         := true
+BOARD_HAS_NO_REAL_SDCARD         := true
+RECOVERY_VARIANT                 := twrp
+BOARD_USE_CUSTOM_RECOVERY_FONT   := \"roboto_23x41.h\"
+TW_INTERNAL_STORAGE_PATH         := "/sdcard"
+TW_INTERNAL_STORAGE_MOUNT_POINT  := "sdcard"
+TW_FLASH_FROM_STORAGE            := true
+TW_BRIGHTNESS_PATH               := /sys/class/leds/lcd-backlight/brightness
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+BOARD_HAS_NO_SELECT_BUTTON       := true
+RECOVERY_SDCARD_ON_DATA          := true
+COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
+BOARD_SUPPRESS_EMMC_WIPE         := true
+
 # Use HW crypto for ODE
 TARGET_HW_DISK_ENCRYPTION := true
 
