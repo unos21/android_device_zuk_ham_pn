@@ -25,10 +25,7 @@ $(call inherit-product, device/zuk/ham/ham.mk)
 # Inherit some common omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 
-$(call inherit-product-if-exists, vendor/zuk/ham/ham-vendor.mk)
-
-PRODUCT_COPY_FILES += \
-    device/zuk/ham/kernel:kernel
+#$(call inherit-product-if-exists, vendor/zuk/ham/ham-vendor.mk)
 
 PRODUCT_NAME := omni_ham
 PRODUCT_DEVICE := ham
