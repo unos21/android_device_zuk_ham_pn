@@ -25,6 +25,8 @@ $(call inherit-product, device/zuk/ham/ham.mk)
 # Inherit some common omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 
+PRODUCT_COPY_FILES += device/zuk/ham/twrp.fstab:recovery/root/etc/twrp.fstab
+
 #$(call inherit-product-if-exists, vendor/zuk/ham/ham-vendor.mk)
 
 PRODUCT_NAME := omni_ham
