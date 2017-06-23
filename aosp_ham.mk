@@ -13,18 +13,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Get the prebuilt list of APNs
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from ham device
 $(call inherit-product, device/zuk/ham/ham.mk)
 
-# Inherit some common aosp stuff.
-#$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common omni stuff.
+$(call inherit-product, vendor/omni/config/common.mk)
 
 $(call inherit-product-if-exists, vendor/zuk/ham/ham-vendor.mk)
 
-PRODUCT_NAME := aosp_ham
+PRODUCT_COPY_FILES += \
+    device/zuk/ham/kernel:kernel
+
+PRODUCT_NAME := omni_ham
 PRODUCT_DEVICE := ham
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_MODEL := ZUK Z1
