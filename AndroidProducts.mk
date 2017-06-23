@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_ham.mk
+    $(LOCAL_DIR)/omni_ham.mk
