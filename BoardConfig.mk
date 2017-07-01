@@ -187,9 +187,12 @@ USE_DEVICE_SPECIFIC_LOC_API := true
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
+# Malloc
+MALLOC_SVELTE := true
+
 # Snapdragon LLVM
 TARGET_USE_SDCLANG := true
- 
+
 # PowerHAL
 TARGET_POWERHAL_VARIANT := qcom
 

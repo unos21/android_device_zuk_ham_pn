@@ -15,7 +15,7 @@
 #
 
 ifneq ($(QCPATH),)
-$(call inherit-product-if-exists, $(QCPATH)/common/config/device-vendor.mk)
+$(call inherit-product, $(QCPATH)/common/config/device-vendor.mk)
 endif
 
 # overlays
@@ -281,10 +281,10 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # call dalvik heap config
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
+$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
 
 # call hwui memory config
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
+$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
 
 # call the proprietary setup
 $(call inherit-product, vendor/zuk/ham/ham-vendor.mk)
