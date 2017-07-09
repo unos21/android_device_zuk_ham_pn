@@ -31,7 +31,7 @@ PRODUCT_MODEL := ZUK Z1
 
 PRODUCT_PACKAGES += \
     Launcher3 \
-    Camera2
+    Snap
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 
